@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Beautiful Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Interactive Navigation Menu</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Web Design</h3>
+                <p>Crafting beautiful and user-friendly websites tailored to your brand.</p><br>
+            </div>
+            <div class="service-card">
+                <h3>SEO Optimization</h3>
+                <p>Improving your website's visibility and ranking on search engines.</p><br>
+            </div>
+            <div class="service-card">
+                <h3>Content Creation</h3>
+                <p>Producing high-quality content that engages and informs your audience.</p><br>
+            </div>
+            <div class="service-card">
+                <h3>Social Media Management</h3>
+                <p>Managing your social media profiles to build your online presence.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Beautiful Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
