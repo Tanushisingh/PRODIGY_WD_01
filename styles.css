@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    font-style:Italic;
+    background-color:#fff ;
+}
+
+header {
+    background:#025e82;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background:#82ccdb  ;
+    color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none; /* Hide links by default */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        display: block;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+.service-card {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.nav-links a.active {
+    background:#346eaf; /* Same as hover background */
+    color: #fff; /* Ensures text is white */
+    font-weight: bold; /* Makes it bold */
+}
+.contact, .content, .about, .services {
+    padding: 80px 20px; /* Ensure this is greater than the header height */
+    /* For example, use padding-top: 80px if header height is 60px */
+}
+html, body {
+    height: 100%; /* Make sure the body takes up the full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and take available space */
+}
+
+footer {
+    background-color:#055aab; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 15px 0; /* Padding for top and bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Font size */
+}
+.details,.information {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
