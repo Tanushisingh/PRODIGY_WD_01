@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Interactive Navigation Menu</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="banner-text"></div>
+                <h1>Welcome to Beautiful Website!</h1>
+                <p>Your journey to stunning web experiences starts here.</p><br>
+            </div>
+            <h2>Explore Our Services</h2>
+            <p>We offer a range of web solutions tailored to your needs.</p><br>
+            <div class="service-preview">
+                <h3>Web Design</h3>
+                <p>Our team designs beautiful and functional websites that meet your business goals.</p><br>
+            </div>
+            <div class="service-preview">
+                <h3>SEO Optimization</h3>
+                <p>We ensure your site ranks high on search engines to attract more visitors.</p><br>
+            </div>
+            <div class="service-preview">
+                <h3>Content Creation</h3>
+                <p>Engaging content that tells your story and connects with your audience.</p><br>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Beautiful Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
